@@ -9,16 +9,48 @@ class FirstPage extends StatelessWidget {
         title: const Text('ファースト'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SecondPage(),
-                  fullscreenDialog: false,
-                ));
-          },
-          child: const Text('次の画面へ'),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SecondPage(),
+                      fullscreenDialog: false,
+                    ));
+              },
+              child: const Text('次の画面へ'),
+            ),
+            Row(
+              children: [
+                Text('foo'),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.pink,
+                ),
+                Text('red'),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.red,
+                ),
+                Text('blue'),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.blue,
+                ),
+                Text('foo'),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
