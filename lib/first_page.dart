@@ -10,7 +10,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ファースト'),
+        title: const Text('ログイン画面'),
       ),
       body: Center(
         child: Padding(
