@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 // import 'first_page.dart';
-import 'fortune_teller.dart';
+// import 'fortune_teller/show.dart';
+import 'fortune_teller/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,6 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(primarySwatch: Colors.blue),
         // home: FirstPage()
-        home: Home());
+        home: FortuneTellerIndex());
   }
 }

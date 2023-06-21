@@ -1,8 +1,9 @@
+// 占い師詳細画面
 import 'package:flutter/material.dart';
-import 'package:flutter_sampleapp_1/first_page.dart';
+import 'package:flutter_sampleapp_1/payment/create.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class FortunTellerShow extends StatelessWidget {
+  const FortunTellerShow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class Home extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FirstPage()));
+                    MaterialPageRoute(builder: (context) => CreatePayment()));
               },
               child: const Text('鑑定する'),
             ),
