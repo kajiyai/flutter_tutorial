@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sampleapp_1/chat/index.dart';
 import 'package:flutter_sampleapp_1/fortune_teller/show.dart';
+import '../mypage/show.dart';
 
 class FortuneTellerIndex extends StatelessWidget {
   const FortuneTellerIndex({super.key});
@@ -133,12 +134,23 @@ class FortuneTellerIndex extends StatelessWidget {
                   ])),
                 ],
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ChatList()));
-                },
-                child: const Text('チャット一覧画面へ'),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ChatList()));
+                    },
+                    child: const Text('チャット一覧画面へ'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Mypage()));
+                    },
+                    child: const Text('マイページへ'),
+                  ),
+                ],
               ),
             ],
           ),
