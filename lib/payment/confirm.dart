@@ -1,6 +1,6 @@
 // お支払い情報確認画面
 import 'package:flutter/material.dart';
-import 'package:flutter_sampleapp_1/fortune_teller/chat.dart';
+import 'package:flutter_sampleapp_1/chat/show.dart';
 
 class ConfirmPage extends StatelessWidget {
   ConfirmPage(

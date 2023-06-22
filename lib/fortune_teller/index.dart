@@ -1,5 +1,6 @@
 // 占い師一覧画面
 import 'package:flutter/material.dart';
+import 'package:flutter_sampleapp_1/chat/index.dart';
 import 'package:flutter_sampleapp_1/fortune_teller/show.dart';
 
 class FortuneTellerIndex extends StatelessWidget {
@@ -131,6 +132,13 @@ class FortuneTellerIndex extends StatelessWidget {
                     ),
                   ])),
                 ],
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ChatList()));
+                },
+                child: const Text('チャット一覧画面へ'),
               ),
             ],
           ),
