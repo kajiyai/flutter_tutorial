@@ -13,12 +13,6 @@ class FortunTellerShow extends StatelessWidget {
       Text("料金体系"),
       Text("お気に入り追加ボタン")
     ];
-    const _reviews = [
-      Text("レビューの合計数"),
-      Text("レビューの平均値(?)"),
-      Text("レビューの一覧ボタン"),
-      Text("一番いいレビューのテキスト"),
-    ];
     const _basic_info = [Text("相談数"), Text("お気に入り数")];
     const _detailed_info = [
       Text("鑑定項目"),
@@ -33,9 +27,6 @@ class FortunTellerShow extends StatelessWidget {
           children: [
             Expanded(
               child: ListView(children: _teller_card),
-            ),
-            Expanded(
-              child: ListView(children: _reviews),
             ),
             Expanded(
               child: ListView(children: _basic_info),
